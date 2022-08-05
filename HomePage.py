@@ -1,3 +1,5 @@
+import time
+
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
@@ -33,6 +35,7 @@ class HomePage:
         self.action.perform()
 
     def open_pates_riz(self):
+        time.sleep(2)
         pates_riz = self.wait.until(EC.visibility_of_element_located(self.pates_riz_selector))
         self.action.move_to_element(pates_riz)
         self.action.perform()
