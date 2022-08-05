@@ -12,7 +12,7 @@ class HomePage:
     close_cookie_button_selector = (By.CSS_SELECTOR, "#onetrust-accept-btn-handler")
     humberger_button_selector = (By.CSS_SELECTOR, '#data-rayons')
     epicerie_salee_selector = (By.CSS_SELECTOR, ".nav-item__menu-link [alt='Epicerie salée']")
-    pates_riz_selector = (By.CSS_SELECTOR, "#data-menu-level-1_R12 li:nth-child(7)")
+    pates_riz_selector = (By.CSS_SELECTOR, "#data-menu-level-1_R13 li:nth-child(7)")
     pates_selector = (By.CSS_SELECTOR, "#data-menu-level-2_R12F05 li:nth-child(3)")
     def __init__(self, driver: webdriver.Chrome):
         self.driver = driver
@@ -35,7 +35,7 @@ class HomePage:
         self.action.perform()
 
     def open_pates_riz(self):
-        time.sleep(2)
+        #time.sleep(2)
         pates_riz = self.wait.until(EC.visibility_of_element_located(self.pates_riz_selector))
         self.action.move_to_element(pates_riz)
         self.action.perform()
