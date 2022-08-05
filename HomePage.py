@@ -13,7 +13,7 @@ class HomePage:
     humberger_button_selector = (By.CSS_SELECTOR, '#data-rayons')
     epicerie_salee_selector = (By.CSS_SELECTOR, ".nav-item__menu-link [alt='Epicerie salée']")
     pates_riz_selector = (By.CSS_SELECTOR, "#data-menu-level-1_R13 li:nth-child(7)")
-    pates_selector = (By.CSS_SELECTOR, "#data-menu-level-2_R12F05 li:nth-child(3)")
+    pates_selector = (By.CSS_SELECTOR, "#data-menu-level-2_R13F05 li:nth-child(3)")
     def __init__(self, driver: webdriver.Chrome):
         self.driver = driver
         self.wait = WebDriverWait(driver, 10)
